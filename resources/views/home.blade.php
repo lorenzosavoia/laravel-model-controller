@@ -1,5 +1,7 @@
 @extends('layouts.base')
 
 @section('content')
-    volando
+     @foreach($movies as $movie)
+        {{$movie->title}}
+    @endforeach
 @endsection
